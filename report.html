@@ -13798,7 +13798,7 @@ jAkqlviMMcYEFUt8xhhjgoolPmOMMUHl/wF9awQrMw4FmQAAAABJRU5ErkJggg==
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#38382;&#39064;-8---&#22238;&#31572;&#65306;">&#38382;&#39064; 8 - &#22238;&#31572;&#65306;<a class="anchor-link" href="#&#38382;&#39064;-8---&#22238;&#31572;&#65306;">&#194;&#182;</a></h3><ul>
 <li>k-fold是将训练数据分成k个连续的块，其中一块用做验证集，其余用做训练集， 计算k次验证结果的均值和方差。</li>
-<li>GridSearchCV可传入一个cv参数，计算出每个参数组合的k次验证评分的均值和方差，从而得出每个参数组合的rank_test_score，选出最佳参数组合</li>
+<li>GridSearchCV可传入一个cv参数，计算每个参数组合的k次验证评分的均值，作为每个参数组合的评分，选出评分最高的为最佳参数组合</li>
 <li><code>‘cv_results_‘</code>能告诉我们每个参数组合在每个fold数据上的训练分数和验证分数，在所有fold上的训练分数、验证分数、训练时间和验证时间的均值和标准差</li>
 <li>不使用交叉验证，会导致在一部分数据上过拟合。交叉验证每一次用不同部分的数据训练，最后所有的数据都训练过。</li>
 </ul>
